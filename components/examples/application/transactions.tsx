@@ -49,12 +49,12 @@ const transactions = [
 export function Transactions() {
   return (
     <Card className="w-full">
-      <CardHeader>
+      <CardHeader className="flex items-center justify-between">
         <CardTitle className="flex items-center gap-1.5">
           <CircleDollarSignIcon className="text-muted-foreground size-4" />
           Transactions
         </CardTitle>
-        <CardAction>
+        <CardAction className="self-center">
           <Select defaultValue="last-month">
             <SelectTrigger size="sm">
               <SelectValue />
